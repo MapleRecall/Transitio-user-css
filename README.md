@@ -21,7 +21,7 @@
 
 ## [Teams](https://github.com/MapleRecall/Transitio-user-css/blob/main/Teams.css)
 
-高仿 Teams 皮肤，常常把自己也骗到。
+高仿 `© Microsoft Teams` 皮肤，常常把自己也骗到。
 
 > [!WARNING]
 > 预览版，代码狂野不羁，目前仅支持暗色模式.
