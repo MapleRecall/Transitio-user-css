@@ -220,12 +220,6 @@ body.vue-component {
       .list-item .list-item__container .list-item__content .avatar {
         width: 34px !important;
         height: 34px !important;
-        filter: contrast(0.8) blur(3px);
-      }
-
-      .list-item__title,
-      .summary-main {
-        filter: blur(3px);
       }
 
       /* .list-item .list-item__container .list-item__content .main-info {
@@ -273,10 +267,6 @@ body.vue-component {
     .aio {
       background-color: var(--aio_BG);
       box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
-
-      span,strong {
-        filter: blur(3px);
-      }
     }
 
     .panel-header {
