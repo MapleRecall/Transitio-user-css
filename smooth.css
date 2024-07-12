@@ -2,8 +2,9 @@
 @name           Smooth QQ
 @description    这么顺滑的QQ谁不喜欢呢
 @preprocessor   transitio
-@version        0.1.0
+@version        0.2.0
 @author         MapleRecall
+@homepageURL    https://github.com/MapleRecall/Transitio-user-css?tab=readme-ov-file#smooth-qq
 @license     	  MIT
 ==/UserStyle== */
 
@@ -102,6 +103,44 @@
   0% {
     opacity: 0.25;
     transform: translateY(8px);
+  }
+}
+
+/* ==== 资料卡 ==== */
+
+#profile-container .q-popover:not([style^="top: 0"]) {
+  overflow: hidden;
+  opacity: 1;
+  animation: profile-container-fadeIn 0.5s var(--smooth-tf);
+}
+
+@keyframes profile-container-fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
+
+#profile-container .q-popover:not([style^="top: 0"]) .buddy-profile {
+  animation: buddy-profile-fadeIn 0.5s var(--smooth-tf);
+}
+
+@keyframes buddy-profile-fadeIn {
+  0% {
+    transform: translateY(-12px);
+  }
+}
+
+/* ==== tooltips ==== */
+
+*:hover > .q-tooltips__content,
+*:hover > .lite-tools-q-tooltips__content {
+  animation: tooltips-fadeIn 0.5s var(--smooth-tf);
+}
+
+@keyframes tooltips-fadeIn {
+  0% {
+    transform: translate(-50%, -4px);
+    opacity: 0;
   }
 }
 
