@@ -2,7 +2,7 @@
 @name           Teams
 @description    骗同事可以，别把自己骗了
 @preprocessor   transitio
-@version        0.0.1 - alpha
+@version        0.0.2 - beta
 @author         MapleRecall
 @homepageURL    https://github.com/MapleRecall/Transitio-user-css?tab=readme-ov-file#teams
 @license     	  MIT
@@ -296,13 +296,11 @@ body.vue-component {
       background-size: cover;
       opacity: 0.8;
     }
-    
+
     /*====== 消息 ======*/
 
-    .chat-msg-area { 
+    .chat-msg-area {
       height: 0;
-
-      
     }
 
     .message-container .message-content__wrapper .msg-content-container::after {
@@ -340,17 +338,21 @@ body.vue-component {
 
     .chat-input-area {
       position: relative;
+      z-index: 1;
       flex: none !important;
       background-color: #292929 !important;
       border-radius: 6px;
       margin: 20px 60px 20px 60px;
       padding: 8px 0 10px;
-      flex-flow: row nowrap !important;
+      flex-flow: row wrap !important;
+      justify-content: flex-end;
       align-items: end;
       flex-basis: 48px !important;
+      gap: 8px;
       border: none;
       box-shadow: 0 0px 0 0 var(--brand_standard), 0 0 0 1px rgba(255, 255, 255, 0.1) inset !important;
       transition: 0.2s !important;
+      container: input-area / inline-size;
 
       &:focus-within {
         box-shadow: 0 2px 0 0 var(--brand_standard), 0 0 0 1px rgba(255, 255, 255, 0.1) inset !important;
@@ -366,12 +368,27 @@ body.vue-component {
         height: auto !important;
         max-height: 192px;
         background: none !important;
+
+        @container input-area (width < 500px) {
+            width: 100%;
+            flex: none;
+        }
       }
 
       .msg-input .qq-editor .ck-editor,
       .msg-input .qq-editor .ck-editor__main {
         height: auto !important;
       }
+
+      /* .ck-editor p[data-placeholder] {
+        white-space: break-spaces;
+        word-break: break-all;
+
+        &::after {
+          content: "　　　　　　　　　　　　　　　　";
+          background: #ffffff00;
+        }
+      } */
 
       .chat-func-bar {
         padding: 0 !important;
@@ -398,7 +415,6 @@ body.vue-component {
         height: auto;
         font: none;
         margin-bottom: 4px;
-        margin-left: 8px;
         border-left: 1px solid #666;
         background: none !important;
       }
