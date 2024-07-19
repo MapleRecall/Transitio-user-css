@@ -2,7 +2,7 @@
 @name           Smooth QQ
 @description    这么顺滑的QQ谁不喜欢呢
 @preprocessor   transitio
-@version        0.2.0
+@version        0.2.1
 @author         MapleRecall
 @homepageURL    https://github.com/MapleRecall/Transitio-user-css?tab=readme-ov-file#smooth-qq
 @license     	  MIT
@@ -56,14 +56,14 @@
 
 /* ==== 菜单 ==== */
 
-.q-context-menu {
+.q-context-menu:not(.sidebar-context-menu) {
   /* background: rgba(32, 32, 32, 0.5)!important; */
   transform-origin: top left;
   animation: menu-fadeIn 0.5s var(--smooth-tf);
-}
 
-.q-context-menu > * {
-  animation: menu-item-fadeIn 0.4s 0.05s var(--smooth-tf) backwards;
+  > * {
+    animation: menu-item-fadeIn 0.4s 0.05s var(--smooth-tf) backwards;
+  }
 }
 
 @keyframes menu-item-fadeIn {
@@ -159,24 +159,24 @@
   }
 
   /* setting-list:not([is-active]) {
-    animation: setting-list-inactive 0.5s var(--smooth-tf);
-  }
-
-  @keyframes setting-list-inactive {
-    0% {
-      padding-bottom: 8px;
+      animation: setting-list-inactive 0.5s var(--smooth-tf);
     }
-  }
-
-  setting-list[data-direction="column"] setting-item,
-  setting-list[data-direction="column"] setting-divider {
-    animation: setting-item-fadeIn 0.5s var(--smooth-tf);
-  }
-
-  @keyframes setting-item-fadeIn {
-    0% {
-      opacity: 0.25;
-      transform: translateY(-8px);
+  
+    @keyframes setting-list-inactive {
+      0% {
+        padding-bottom: 8px;
+      }
     }
-  } */
+  
+    setting-list[data-direction="column"] setting-item,
+    setting-list[data-direction="column"] setting-divider {
+      animation: setting-item-fadeIn 0.5s var(--smooth-tf);
+    }
+  
+    @keyframes setting-item-fadeIn {
+      0% {
+        opacity: 0.25;
+        transform: translateY(-8px);
+      }
+    } */
 }
