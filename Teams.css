@@ -2,7 +2,7 @@
 @name           Teams
 @description    骗同事可以，别把自己骗了
 @preprocessor   transitio
-@version        0.0.2 - beta
+@version        0.0.3 - beta
 @author         MapleRecall
 @homepageURL    https://github.com/MapleRecall/Transitio-user-css?tab=readme-ov-file#teams
 @license     	  MIT
@@ -339,17 +339,17 @@ body.vue-component {
     .chat-input-area {
       position: relative;
       z-index: 1;
-      flex: none !important;
-      background-color: #292929 !important;
-      border-radius: 6px;
+      height: auto;
+      flex: 0 0 48px!important;
+      flex-flow: row-reverse wrap-reverse !important;
+      justify-content: flex-start;
+      align-items: end;
+      gap: 8px;
       margin: 20px 60px 20px 60px;
       padding: 8px 0 10px;
-      flex-flow: row wrap !important;
-      justify-content: flex-end;
-      align-items: end;
-      flex-basis: 48px !important;
-      gap: 8px;
       border: none;
+      border-radius: 6px;
+      background-color: #292929 !important;
       box-shadow: 0 0px 0 0 var(--brand_standard), 0 0 0 1px rgba(255, 255, 255, 0.1) inset !important;
       transition: 0.2s !important;
       container: input-area / inline-size;
@@ -364,15 +364,13 @@ body.vue-component {
       }
 
       .msg-input {
-        order: -1;
+        order: 1;
         height: auto !important;
         max-height: 192px;
+        min-width: 50px;
         background: none !important;
-
-        @container input-area (width < 500px) {
-            width: 100%;
-            flex: none;
-        }
+        flex: auto;
+        width: auto;
       }
 
       .msg-input .qq-editor .ck-editor,
@@ -391,6 +389,8 @@ body.vue-component {
       } */
 
       .chat-func-bar {
+        flex: auto;
+        justify-content: flex-end;
         padding: 0 !important;
         margin-bottom: 4px;
         background: none !important;
@@ -410,6 +410,7 @@ body.vue-component {
       }
 
       .operation {
+        order: -1;
         padding: 0 0 0 12px;
         width: auto;
         height: auto;
