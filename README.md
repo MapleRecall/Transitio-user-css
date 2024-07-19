@@ -1,6 +1,6 @@
 适用于 [Transitio](https://github.com/PRO-2684/transitio) 插件的QQNT自定义样式
 
-## [Smooth QQ](https://github.com/MapleRecall/Transitio-user-css/blob/main/smooth.css)
+# 1. [Smooth QQ](https://github.com/MapleRecall/Transitio-user-css/blob/main/smooth.css)
 
 添加滑溜溜的动画，这么顺滑的QQ谁不喜欢呢
 
@@ -19,7 +19,32 @@
 * 设置界面添加一些页面切换效果
 * 为常见交互添加过度效果
 
-## [Teams](https://github.com/MapleRecall/Transitio-user-css/blob/main/Teams.css)
+
+
+
+
+# 2. [Private Plus](https://github.com/MapleRecall/Transitio-user-css/blob/main/private_plus.css)
+
+CSS版本高级隐私模式，优雅，实用。
+* 方便截图，还可以防窥屏，hover上去能看到原文和头像
+* 使用了混沌字体，将常用中文替换成随机平假名，英文替换成随机片假名，数字打乱顺序。
+
+> [!NOTE]
+> 可能之后会做成可配置的独立插件
+
+> [!NOTE]
+> 使用了Source Han Sans作为源字体
+> 
+> 混沌字体生成工具之后有空也会发出来，可以自定义字体和替换模式
+> 
+> <del>比如全部替换成锟斤拷烫烫烫<del>
+
+![snipaste_20240719_125140](https://github.com/user-attachments/assets/ad668fa4-1c67-449d-a5ba-89e30b125c75)
+
+
+
+
+# 3. [Teams](https://github.com/MapleRecall/Transitio-user-css/blob/main/Teams.css)
 
 高仿 `© Microsoft Teams` 皮肤，常常把自己也骗到。
 
