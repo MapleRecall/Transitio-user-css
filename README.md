@@ -32,14 +32,20 @@ CSS版本高级隐私模式，优雅，实用。
 > [!NOTE]
 > 可能之后会做成可配置的独立插件
 
+![](https://github.com/user-attachments/assets/ad668fa4-1c67-449d-a5ba-89e30b125c75)
+
 > [!NOTE]
 > 使用了Source Han Sans作为源字体
 > 
 > 混沌字体生成工具之后有空也会发出来，可以自定义字体和替换模式
 > 
 > <del>比如全部替换成锟斤拷烫烫烫<del>
+>
+> ![](https://github.com/user-attachments/assets/a9b46e30-c4ad-445c-9816-82b1a0558d3d)
 
-![snipaste_20240719_125140](https://github.com/user-attachments/assets/ad668fa4-1c67-449d-a5ba-89e30b125c75)
+
+
+
 
 
 
